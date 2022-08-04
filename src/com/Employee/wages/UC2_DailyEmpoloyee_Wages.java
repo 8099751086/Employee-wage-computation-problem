@@ -1,28 +1,33 @@
 package com.Employee.wages;
 
-public class UC2_DailyEmpoloyee_Wages {
+public class PartTimeEmployeeWages {
 
-	public static void main(String[] args) {
-		int noOfhourperday = 8;
-		int Wageperhr = 20;
+public static void main(String[] args) {
+int dailyWage = 0;
+ int noofpartHourperday = 4;
+ int noOfhourperday = 8;
+ int Wageperhr = 20;
+     int attendence= (int) (Math.floor(Math.random()*10))%2;
+     
+switch (attendence) {
 
-		int Attendance = 1;
-		double randomCheck = (Math.floor(Math.random() * 10)) % 2;
+case 1:
+	System.out.println("Employee is Working Full Time");
+	dailyWage= Wageperhr * noOfhourperday;
+	System.out.println(" Employee daily wage is :" + dailyWage );
+  break;
+case 0:
+    System.out.println("Employee is working part time");
+    dailyWage= Wageperhr * noofpartHourperday ;
+    System.out.println("Employee daily wage is: "+ dailyWage);
+    break;
 
-		if (Attendance == randomCheck) {
+ default :
+ System.out.println("Employee is absent");
+    break;
+}
 
-			if (noOfhourperday == 8) {
-				System.out.println("Employee is present");
-				int totalWage = noOfhourperday * Wageperhr;
-				System.out.println("wage per day is:" +  totalWage);
 
-			}
-		}
-
-		else {
-			System.out.println(" Employee is Absent");
-		}
-
-	}
+}
 
 }
