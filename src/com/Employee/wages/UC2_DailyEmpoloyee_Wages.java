@@ -1,6 +1,6 @@
 package com.Employee.wages;
 
-public class PartTimeEmployeeWages {
+public class EmployeeWages {
 
 public static void main(String[] args) {
 int dailyWage = 0;
