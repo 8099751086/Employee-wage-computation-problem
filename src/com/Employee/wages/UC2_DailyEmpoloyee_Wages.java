@@ -1,6 +1,6 @@
 package com.Employee.wages;
 
-public class DailyEmpoloyee_Wages {
+public class EmpoloyeeWages {
 
 	public static void main(String[] args) {
 		int noOfhourperday = 8;
