@@ -26,8 +26,7 @@ case 0:
  System.out.println("Employee is absent");
     break;
 }
-
-
+	
 }
 
 }
