@@ -1,4 +1,4 @@
-package com.Employee.wages;
+package com.employee.wages;
 
 public class EmployeeWages {
 
